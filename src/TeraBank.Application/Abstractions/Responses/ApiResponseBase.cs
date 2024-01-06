@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using TeraBank.Application.Responses;
 
 namespace TeraBank.Application.Abstractions.Responses;
 

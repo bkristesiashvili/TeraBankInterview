@@ -1,6 +1,7 @@
 ﻿using System.Net;
+using TeraBank.Application.Abstractions.Responses;
 
-namespace TeraBank.Application.Abstractions.Responses;
+namespace TeraBank.Application.Responses;
 
 public sealed class ApiResponse : ApiResponseBase, IResponse
 {

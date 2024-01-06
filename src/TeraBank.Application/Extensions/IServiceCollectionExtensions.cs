@@ -5,7 +5,6 @@ using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
 using System.Reflection;
-
 using TeraBank.Application.Abstractions.Responses;
 using TeraBank.Application.Accounts.Commands.CreateBankAccount;
 using TeraBank.Application.Accounts.Commands.RegisterAccount;

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using TeraBank.Application.Abstractions.Mediator.Commands;
 using TeraBank.Application.Abstractions.Responses;
 using TeraBank.Application.Accounts.Commands.CreateBankAccount;
+using TeraBank.Application.Responses;
 using TeraBank.Domain.Entities;
 
 namespace TeraBank.Application.Accounts.Commands.RegisterAccount;

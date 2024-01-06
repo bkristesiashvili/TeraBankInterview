@@ -1,9 +1,10 @@
 ﻿using TeraBank.Application.Abstractions.Mediator.Commands;
-using TeraBank.Application.Abstractions.Responses;
 using TeraBank.Domain.Abstractions.Database.Repositories.Commands;
 using TeraBank.Domain.Abstractions.Database.Repositories.Queries;
 using TeraBank.Domain.Abstractions.Database;
 using TeraBank.Domain.Entities;
+using TeraBank.Application.Responses;
+using TeraBank.Application.Abstractions.Responses;
 
 namespace TeraBank.Application.Transactions.Commands.TransferMoney;
 

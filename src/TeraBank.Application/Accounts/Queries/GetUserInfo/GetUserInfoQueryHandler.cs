@@ -3,6 +3,7 @@
 using TeraBank.Application.Abstractions.Mediator.Queries;
 using TeraBank.Application.Abstractions.Responses;
 using TeraBank.Application.Accounts.Queries.GetUserInfo.Responses;
+using TeraBank.Application.Responses;
 using TeraBank.Domain.Entities;
 
 namespace TeraBank.Application.Accounts.Queries.GetUserInfo;

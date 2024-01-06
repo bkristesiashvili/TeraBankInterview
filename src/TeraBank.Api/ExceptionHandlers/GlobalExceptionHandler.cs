@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-
 using TeraBank.Application.Abstractions.Responses;
+using TeraBank.Application.Responses;
 
 namespace TeraBank.Api.ExceptionHandlers;
 

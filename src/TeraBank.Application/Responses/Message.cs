@@ -1,3 +1,3 @@
-﻿namespace TeraBank.Application.Abstractions.Responses;
+﻿namespace TeraBank.Application.Responses;
 
 public sealed record Message(bool IsSuccess, string Text);

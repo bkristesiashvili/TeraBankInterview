@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
 
 using MediatR;
-
 using TeraBank.Application.Abstractions.Responses;
+using TeraBank.Application.Responses;
 
 namespace TeraBank.Application.Abstractions.Mediator.Commands.Behaviors;
 
