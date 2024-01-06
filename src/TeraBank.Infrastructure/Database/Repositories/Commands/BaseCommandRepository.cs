@@ -28,7 +28,7 @@ internal abstract class BaseCommandRepository<TEntity>(IBankDbContext dbContext)
     {
         if (!cancellationToken.IsCancellationRequested)
         {
-            entity.UpdateDate = DateTimeOffset.Now;
+            entity.Update();
             dbContext.Set<TEntity>().Update(entity);
         }
 
