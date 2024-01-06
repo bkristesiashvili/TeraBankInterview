@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3E55CFA3-3FED-4213-A131-8920FED2B4B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeraBank.Api", "src\TeraBank.Api\TeraBank.Api.csproj", "{10183CD7-F370-4C3B-A174-C36B9C3CC5E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeraBank.Common", "src\TeraBank.Common\TeraBank.Common.csproj", "{FFA5DCA1-FE52-4541-A1DE-383A4B0A893A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeraBank.Domain", "src\TeraBank.Domain\TeraBank.Domain.csproj", "{BA6AB6E7-C853-4214-8B85-0E95D18F447C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeraBank.Infrastructure", "src\TeraBank.Infrastructure\TeraBank.Infrastructure.csproj", "{4417B79E-7925-464D-9A1A-26F7639D26C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeraBank.Application", "src\TeraBank.Application\TeraBank.Application.csproj", "{EBEDC430-EB4B-4E2C-B04F-F605C148FE57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10183CD7-F370-4C3B-A174-C36B9C3CC5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10183CD7-F370-4C3B-A174-C36B9C3CC5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10183CD7-F370-4C3B-A174-C36B9C3CC5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10183CD7-F370-4C3B-A174-C36B9C3CC5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA5DCA1-FE52-4541-A1DE-383A4B0A893A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA5DCA1-FE52-4541-A1DE-383A4B0A893A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA5DCA1-FE52-4541-A1DE-383A4B0A893A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA5DCA1-FE52-4541-A1DE-383A4B0A893A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6AB6E7-C853-4214-8B85-0E95D18F447C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6AB6E7-C853-4214-8B85-0E95D18F447C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6AB6E7-C853-4214-8B85-0E95D18F447C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6AB6E7-C853-4214-8B85-0E95D18F447C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4417B79E-7925-464D-9A1A-26F7639D26C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4417B79E-7925-464D-9A1A-26F7639D26C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4417B79E-7925-464D-9A1A-26F7639D26C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4417B79E-7925-464D-9A1A-26F7639D26C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBEDC430-EB4B-4E2C-B04F-F605C148FE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBEDC430-EB4B-4E2C-B04F-F605C148FE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBEDC430-EB4B-4E2C-B04F-F605C148FE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBEDC430-EB4B-4E2C-B04F-F605C148FE57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10183CD7-F370-4C3B-A174-C36B9C3CC5E4} = {3E55CFA3-3FED-4213-A131-8920FED2B4B0}
+		{FFA5DCA1-FE52-4541-A1DE-383A4B0A893A} = {3E55CFA3-3FED-4213-A131-8920FED2B4B0}
+		{BA6AB6E7-C853-4214-8B85-0E95D18F447C} = {3E55CFA3-3FED-4213-A131-8920FED2B4B0}
+		{4417B79E-7925-464D-9A1A-26F7639D26C3} = {3E55CFA3-3FED-4213-A131-8920FED2B4B0}
+		{EBEDC430-EB4B-4E2C-B04F-F605C148FE57} = {3E55CFA3-3FED-4213-A131-8920FED2B4B0}
+	EndGlobalSection
+EndGlobal

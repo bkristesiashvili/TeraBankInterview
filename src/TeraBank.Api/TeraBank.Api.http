@@ -1,0 +1,6 @@
+@TeraBank.Api_HostAddress = http://localhost:5047
+
+GET {{TeraBank.Api_HostAddress}}/accounts/info/B75C52F1-0B1F-47EA-8029-079E64891473
+Accept: application/json
+
+###
