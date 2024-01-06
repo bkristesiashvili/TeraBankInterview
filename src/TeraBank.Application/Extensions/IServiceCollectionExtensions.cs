@@ -27,10 +27,10 @@ public static class IServiceCollectionExtensions
 
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
-        services.AddScoped<IPipelineBehavior<MakeDepositCommand, IResponse>, MakeDepositCommandValidationBehavior>();
-        services.AddScoped<IPipelineBehavior<TransferMoneyCommand, IResponse>, TransferMoneyCommandValidationBehavior>();
-        services.AddScoped<IPipelineBehavior<RegisterAccountCommand, IResponse>, RegisterAccountCommandValidationBehavior>();
-        services.AddScoped<IPipelineBehavior<WithdrawalMoneyCommand, IResponse>, WithdrawalMoneyCommandvalidationBehavior>();
-        services.AddScoped<IPipelineBehavior<CreateBankAccountCommand, IResponse>, CreateBankAccountCommandValidationBehavior>();
+        //services.AddScoped<IPipelineBehavior<MakeDepositCommand, IResponse>, MakeDepositCommandValidationBehavior>();
+        //services.AddScoped<IPipelineBehavior<TransferMoneyCommand, IResponse>, TransferMoneyCommandValidationBehavior>();
+        //services.AddScoped<IPipelineBehavior<RegisterAccountCommand, IResponse>, RegisterAccountCommandValidationBehavior>();
+        //services.AddScoped<IPipelineBehavior<WithdrawalMoneyCommand, IResponse>, WithdrawalMoneyCommandvalidationBehavior>();
+        //services.AddScoped<IPipelineBehavior<CreateBankAccountCommand, IResponse>, CreateBankAccountCommandValidationBehavior>();
     }
 }
