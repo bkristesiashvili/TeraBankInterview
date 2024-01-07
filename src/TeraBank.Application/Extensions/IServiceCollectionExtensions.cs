@@ -6,8 +6,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 using System.Reflection;
 using TeraBank.Application.Abstractions.Responses;
+using TeraBank.Application.Abstractions.Services;
+using TeraBank.Application.Accounts.Commands.Authentication;
 using TeraBank.Application.Accounts.Commands.CreateBankAccount;
 using TeraBank.Application.Accounts.Commands.RegisterAccount;
+using TeraBank.Application.Services;
 using TeraBank.Application.Transactions.Commands.MakeDeposit;
 using TeraBank.Application.Transactions.Commands.TransferMoney;
 using TeraBank.Application.Transactions.Commands.WithdrawalMoney;
@@ -29,8 +32,11 @@ public static class IServiceCollectionExtensions
 
         services.AddScoped<IPipelineBehavior<MakeDepositCommand, IResponse>, MakeDepositCommandValidationBehavior>();
         services.AddScoped<IPipelineBehavior<TransferMoneyCommand, IResponse>, TransferMoneyCommandValidationBehavior>();
+        services.AddScoped<IPipelineBehavior<AuthenticationCommand, IResponse>, AuthenticationCommandVaalidationBehavior>();
         services.AddScoped<IPipelineBehavior<RegisterAccountCommand, IResponse>, RegisterAccountCommandValidationBehavior>();
         services.AddScoped<IPipelineBehavior<WithdrawalMoneyCommand, IResponse>, WithdrawalMoneyCommandvalidationBehavior>();
         services.AddScoped<IPipelineBehavior<CreateBankAccountCommand, IResponse>, CreateBankAccountCommandValidationBehavior>();
+
+        services.AddScoped<IAuthTokenService, AuthTokenService>();
     }
 }

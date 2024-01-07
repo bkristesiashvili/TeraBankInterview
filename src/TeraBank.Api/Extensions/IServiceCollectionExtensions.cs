@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 
-using TeraBank.Api.Options;
+using TeraBank.Application.Options;
 using TeraBank.Common.Extensions;
 
 namespace TeraBank.Api.Extensions;
