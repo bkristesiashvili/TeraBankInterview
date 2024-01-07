@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 using TeraBank.Api.Results;
 using TeraBank.Application.Abstractions.Responses;
+using TeraBank.Application.Accounts.Commands.Authentication;
 using TeraBank.Application.Accounts.Commands.RegisterAccount;
 using TeraBank.Application.Accounts.Queries.GetUserInfo;
 using TeraBank.Application.Transactions.Commands.MakeDeposit;
@@ -36,15 +37,17 @@ internal static class IApplicationBuilderExtensions
             [FromBody] RegisterAccountCommand request,
             CancellationToken cancellationToken) =>
         {
-            var result = await sender.Send(request, cancellationToken);
+            IResponse result = await sender.Send(request, cancellationToken);
             return StatusCodeResults.Response(result);
 
         }).Produces<IResponse>();
 
         authGroup.MapPost("login", async (ISender sender,
+            AuthenticationCommand request,
             CancellationToken cancellationToken) =>
         {
-            return StatusCodeResults.Response(System.Net.HttpStatusCode.OK, new { Message = "Developing process" });
+            IResponse result = await sender.Send(request, cancellationToken);
+            return StatusCodeResults.Response(result);
 
         }).Produces<IResponse>();
     }
